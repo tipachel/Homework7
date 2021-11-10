@@ -14,9 +14,9 @@
 		59CC63E3273AD7710068DBE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59CC63E1273AD7710068DBE0 /* LaunchScreen.storyboard */; };
 		59CC63EB273AD7C50068DBE0 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CC63EA273AD7C50068DBE0 /* Contacts.swift */; };
 		59CC63ED273AD8D50068DBE0 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CC63EC273AD8D50068DBE0 /* ContactsViewController.swift */; };
-		59CC63EF273AD9120068DBE0 /* ContactsWithInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CC63EE273AD9120068DBE0 /* ContactsWithInfoViewController.swift */; };
+		59CC63EF273AD9120068DBE0 /* DeployedInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CC63EE273AD9120068DBE0 /* DeployedInfoViewController.swift */; };
 		59CC63F4273AE26B0068DBE0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CC63F3273AE26B0068DBE0 /* DataManager.swift */; };
-		59CC63F7273AE7EF0068DBE0 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CC63F6273AE7EF0068DBE0 /* MoreInfoViewController.swift */; };
+		59CC63F7273AE7EF0068DBE0 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CC63F6273AE7EF0068DBE0 /* InformationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +29,9 @@
 		59CC63E4273AD7710068DBE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59CC63EA273AD7C50068DBE0 /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		59CC63EC273AD8D50068DBE0 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
-		59CC63EE273AD9120068DBE0 /* ContactsWithInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsWithInfoViewController.swift; sourceTree = "<group>"; };
+		59CC63EE273AD9120068DBE0 /* DeployedInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeployedInfoViewController.swift; sourceTree = "<group>"; };
 		59CC63F3273AE26B0068DBE0 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		59CC63F6273AE7EF0068DBE0 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
+		59CC63F6273AE7EF0068DBE0 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +79,9 @@
 		59CC63F0273AD9430068DBE0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				59CC63EE273AD9120068DBE0 /* ContactsWithInfoViewController.swift */,
+				59CC63EE273AD9120068DBE0 /* DeployedInfoViewController.swift */,
 				59CC63EC273AD8D50068DBE0 /* ContactsViewController.swift */,
-				59CC63F6273AE7EF0068DBE0 /* MoreInfoViewController.swift */,
+				59CC63F6273AE7EF0068DBE0 /* InformationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -185,8 +185,8 @@
 				59CC63EB273AD7C50068DBE0 /* Contacts.swift in Sources */,
 				59CC63F4273AE26B0068DBE0 /* DataManager.swift in Sources */,
 				59CC63D7273AD76B0068DBE0 /* AppDelegate.swift in Sources */,
-				59CC63F7273AE7EF0068DBE0 /* MoreInfoViewController.swift in Sources */,
-				59CC63EF273AD9120068DBE0 /* ContactsWithInfoViewController.swift in Sources */,
+				59CC63F7273AE7EF0068DBE0 /* InformationViewController.swift in Sources */,
+				59CC63EF273AD9120068DBE0 /* DeployedInfoViewController.swift in Sources */,
 				59CC63D9273AD76B0068DBE0 /* SceneDelegate.swift in Sources */,
 				59CC63ED273AD8D50068DBE0 /* ContactsViewController.swift in Sources */,
 			);
