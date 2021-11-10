@@ -18,22 +18,19 @@ class ContactsViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let tabBarController = segue.destination as? UITabBarController else
-        {return}
-        guard let viewControllers = tabBarController.viewControllers else {return}
-        guard let indexPath = tableView.indexPathForSelectedRow else {return}
-        viewControllers.forEach{
-            if let deployedVC = $0 as? DeployedInfoViewController{
-                deployedVC.person = contacts
-            } else if let navigationVC = $0 as? UINavigationController {
-                let infoVC = navigationVC.topViewController as! InformationViewController
-                infoVC.person = contacts[indexPath.row]
-            }
-        }
         
+        guard let informationVC = segue.destination as? InformationViewController else{return}
+        guard let indexPath = tableView.indexPathForSelectedRow else {return}
+        let person = contacts[indexPath.row]
+        informationVC.person = person
+        
+        guard let deployedVC = segue.destination as? DeployedInfoViewController else {return}
+        let persons = contacts
+        deployedVC.persons = persons
     }
-    
 }
+
+
 
 extension ContactsViewController{
     
@@ -41,7 +38,6 @@ extension ContactsViewController{
         
         return contacts.count
     }
-    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath)
